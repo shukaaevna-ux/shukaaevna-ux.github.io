@@ -3,11 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
+
+    <title>Юношеский Максимализм</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: white;
+            color: #111;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            padding: 20px;
+            border-bottom: 2px solid #111;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .issue {
+            font-size: 14px;
+        }
+
+        main {
+            padding: 25px 20px 80px;
+        }
+
+        .title {
+            font-family: "CHAOS16", Arial, sans-serif;
+            font-size: clamp(55px, 15vw, 180px);
+            line-height: 0.82;
+            letter-spacing: -0.07em;
+            font-weight: 900;
+            margin: 30px 0 70px;
+            max-width: 1200px;
+        }
+
+        .subtitle {
+            font-family: Georgia, serif;
+            font-size: clamp(22px, 4vw, 42px);
+            max-width: 700px;
+            margin-left: 15%;
+            margin-bottom: 100px;
+        }
+
+        .line {
+            border-top: 2px solid #111;
+            margin: 30px 0;
+        }
+
+        .sections {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .card {
+            border: 2px solid #111;
+            padding: 25px;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            background: #1200ff;
+            color: white;
+            border-color: #1200ff;
+            transform: rotate(-1deg);
+        }
+
+        .number {
+            font-size: 14px;
+        }
+
+        .card h2 {
+            font-size: clamp(30px, 5vw, 60px);
+            margin: 0;
+            letter-spacing: -0.05em;
+        }
+
+        .card p {
+            font-family: Georgia, serif;
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+        footer {
+            margin-top: 100px;
+            border-top: 2px solid #111;
+            padding-top: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .sections {
+                grid-template-columns: 1fr;
+            }
+
+            .subtitle {
+                margin-left: 0;
+                margin-bottom: 70px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Привет, это мой сайт</h1>
-    <p>Я только что создала свой первый сайт.</p>
+
+<header>
+    <div class="logo">ЮМ</div>
+    <div class="issue">№ 01 / 2026</div>
+</header>
+
+<main>
+
+    <div class="title">
+        Юношеский<br>
+        Максимализм
+    </div>
+
+    <div class="subtitle">
+        Независимый культурный зин-журнал
+        под управлением юности.
+    </div>
+
+    <div class="line"></div>
+
+    <section class="sections">
+
+        <article class="card">
+            <div class="number">01 / ТЕКСТЫ</div>
+            <h2>Проза</h2>
+            <p>Истории, наблюдения и художественные тексты.</p>
+        </article>
+
+        <article class="card">
+            <div class="number">02 / ПОЭЗИЯ</div>
+            <h2>Стихи</h2>
+            <p>Поэзия без необходимости объяснять, зачем она нужна.</p>
+        </article>
+
+        <article class="card">
+            <div class="number">03 / АВТОРЫ</div>
+            <h2>Авторы</h2>
+            <p>Люди, которые пишут, создают и думают.</p>
+        </article>
+
+        <article class="card">
+            <div class="number">04 / ПУБЛИКАЦИИ</div>
+            <h2>Статьи</h2>
+            <p>Тексты о культуре, искусстве и современности.</p>
+        </article>
+
+    </section>
+
+    <footer>
+        Независимый культурный зин-журнал под управлением юности.
+    </footer>
+
+</main>
+
 </body>
 </html>
